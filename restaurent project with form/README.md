@@ -82,6 +82,12 @@ class Home extends Component {
 }
 export default connect(mapStateToProps)(Home); ////////  very impotatant
 ```
-
-
 <img src="picS/accessing store.JPG" width="100%" >
+<br /> <br /> <hr />
+
+# Dispatch: basic way
+<img src="picS/dispatch basic use.JPG" width="100%" > <br /> <br /> <hr />
+
+# Dispatch: better way 
+### (call all dispatch function from one component)
+<img src="picS/better way to use dispatch.JPG" width="100%" > 

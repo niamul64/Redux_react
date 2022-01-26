@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'; // provides functionality to work with r
 
 
 function App() {
-  console.log("App.js: ", myStore.getState()); // will show the objects from store
+  //console.log("App.js: ", myStore.getState()); // will show the objects from store
   return (///////////////// routing stablish for whole app
     <div className="App">
       <Provider store={myStore}>    {/* ///////////   for redux with store */}
