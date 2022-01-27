@@ -91,3 +91,10 @@ export default connect(mapStateToProps)(Home); ////////  very impotatant
 # Dispatch: better way 
 ### (call all dispatch function from one component)
 <img src="picS/better way to use dispatch.JPG" width="100%" > 
+
+<br /> <br /> <hr />
+
+# Action creater:
+## make a separet file for all actions.
+<img src="picS/actionCreators.JPG" width="50%" > <br />
+<img src="picS/acction obj pass.JPG" width="100%" > <br />

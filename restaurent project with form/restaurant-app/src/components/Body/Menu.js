@@ -5,9 +5,9 @@ import MenuItem from './MenuItem';
 import DishDetails from './DishDetails';
 import Comments from '../../data/Comments';
 import { Modal, CardGroup, ModalBody, Card, CardColumns, ModalFooter, Button } from 'reactstrap';
-import * as actionType from '../../redux/actionType';
-
+import { addCommentActionOBJ } from '../../redux/actionCreators';
 import { connect } from 'react-redux'; // need to import 
+
 const mapStateToProps = state => {
       // console.log("Home mapStateToProps", state)
       return {
@@ -18,15 +18,9 @@ const mapStateToProps = state => {
 }
 const mapDispatchToProps = dispatch => {
       return {
-            addComment: (dishID, rating, author, comment) => dispatch({
-                  type: actionType.ADD_COMMENT,
-                  payload: {
-                        dishId: dishID,
-                        rating: rating,
-                        author: author,
-                        comment: comment
-                  }
-            })
+            addComment: (dishId, rating, author, comment) => dispatch(
+                  addCommentActionOBJ(dishId, rating, author, comment)
+            )
             // ,
             // More funtions can be retten here
       }
